@@ -18,7 +18,7 @@ public class BOJ_15654 {
 			return;
 		}
 		
-		for(int i=1;i<N+1;i++) {// 15651번 문제와 다른 부분: 수열을 비내림차순으로 만들기 위함
+		for(int i=1;i<N+1;i++) {
 			if(visit[i]==0) {	// 숫자 i에 아직 방문하지 않았다면
 				backtracking(i, cnt+1);	// 방문
 				visit[i]=0;	// 다음 탐색을 위해 초기화
